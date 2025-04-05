@@ -1,15 +1,1 @@
-
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-header { background: #0074cc; color: #fff; padding: 10px; display: flex; align-items: center; justify-content: space-between; }
-.logo { height: 50px; }
-nav ul { list-style: none; display: flex; gap: 20px; }
-nav ul li a { color: #fff; text-decoration: none; }
-nav ul li a:hover, nav ul li a.active { font-weight: bold; }
-.hero { padding: 20px; background: #f2f2f2; text-align: center; }
-.slideshow { padding: 20px; text-align: center; }
-.slider img { width: 100%; max-width: 400px; display: none; }
-.slider img.active { display: block; }
-.catalogue-download { padding: 20px; text-align: center; }
-.catalogue-download .btn { padding: 10px 20px; background: #0074cc; color: white; text-decoration: none; border-radius: 5px; }
-footer { background: #222; color: #fff; text-align: center; padding: 10px; }
-footer .social-icons a { color: white; margin: 0 10px; font-size: 20px; }
+/* Placeholder CSS */
