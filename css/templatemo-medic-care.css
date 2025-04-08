@@ -1258,3 +1258,474 @@ footer {
   padding: 20px 0;
   font-size: 14px;
 }
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-item {
+  height: 500px;
+  background-color: #000; /* Optional: keeps layout clean if image has different sizes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.carousel-item img {
+  max-height: 100% !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+}
+
+.carousel-item {
+  position: relative;
+  height: 500px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Overlay background over image */
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caption inside overlay */
+.carousel-caption {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel-caption h2,
+.carousel-caption p {
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills area, no black edges */
+}
+.carousel-caption h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1);
+}
+
+.carousel-caption h2:hover {
+  color: #00c2cb;
+  transform: scale(1.1);
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.carousel-caption {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 500px; /* or adjust */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the container with no black edges */
+}
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 500px; /* or adjust */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the container with no black edges */
+}
+.carousel-item {
+  transition: transform 0.6s ease-in-out; /* default is 0.6s, you can reduce it */
+}
+.carousel-item {
+  transition: transform 0.4s ease-in-out; /* default is 0.6s */
+}
+.carousel-image {
+  height: 550px;
+  object-fit: cover;
+}
+
+/* Fix: Remove black caption background */
+.carousel-caption {
+  background: none !important;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7); /* for visibility on bright images */
+}
+
+/* Animation on heading */
+.caption-animated {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.caption-animated:hover {
+  transform: scale(1.05);
+  color: #00d9ff;
+}
+.carousel-item img {
+  object-fit: contain;
+  background-color: white;
+}
+.carousel-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 60%, rgba(255,255,255,0.5) 100%);
+}
+.carousel-item img {
+  height: 85vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.animated-text {
+  animation: fadeInUp 1.5s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.carousel-item img {
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+#hero {
+  background-color: #f9f9f9;
+}
+
+#hero h2 {
+  font-size: 36px;
+}
+
+#hero p {
+  font-size: 18px;
+  color: #444;
+}
+
+.callback-heading {
+  color: red;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.callback-heading:hover {
+  color: #ff0000; /* brighter red */
+  transform: scale(1.05);
+  text-shadow: 1px 1px 3px rgba(255, 0, 0, 0.4);
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.4), 0 0 10px rgba(255, 0, 0, 0.3);
+    color: red;
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 0, 0, 0.6);
+    color: #ff0000;
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.4), 0 0 10px rgba(255, 0, 0, 0.3);
+    color: red;
+  }
+}
+
+.callback-heading {
+  color: red;
+  animation: glowPulse 2s ease-in-out infinite;
+}
+/* Preloader styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#preloader img {
+  width: 300px; /* adjust this size as needed */
+  animation: fadeZoom 1.5s ease-in-out infinite;
+}
+
+@keyframes fadeZoom {
+  0% { opacity: 0.6; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0.6; transform: scale(0.95); }
+}
+
+.bold-text {
+  font-weight: bold;
+}
+.tagline-text {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #c40000; /* deep attractive red */
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(255, 0, 0, 0.3);
+  animation: fadeInPop 1.5s ease-in-out;
+}
+
+/* Entry animation */
+@keyframes fadeInPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animated-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.animated-text {
+  animation: fadeInPop 1.2s ease-in-out both;
+}
+
+/* Reuse for all animated text */
+@keyframes fadeInPop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0) scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animated-text:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.animated-text:nth-of-type(2) {
+  animation-delay: 0.3s;
+}
+.animated-text:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+
+
+.categories-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 30px;
+  gap: 20px;
+}
+.category-column {
+  min-width: 250px;
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  text-align: center;
+}
+.category-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.slider-container {
+  position: relative;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.product-card {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.product-card.active {
+  display: flex;
+}
+.product-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.arrow-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px 0;
+  color: #1e40af;
+}
+.download-btn {
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+  padding: 12px 20px;
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* WhatsApp Button */
+.whatsapp_float {
+  position: fixed;
+  bottom: 90px; /* Position above the call button */
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  z-index: 9999;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp_float:hover {
+  background-color: #128c7e;
+}
+
+/* Floating Call Button */
+.call_float {
+  position: fixed;
+  bottom: 25px; /* Adjust if overlapping WhatsApp */
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  z-index: 9999;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.call_float:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.call_float i {
+  transform: rotate(0deg); /* Icon direction normal */
+}
+.whatsapp_float {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.whatsapp_float:hover {
+  background-color: #1ebc59;
+  transform: scale(1.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+
